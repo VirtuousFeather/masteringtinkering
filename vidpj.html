@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="ximpel/ximpel.css" type="text/css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/javascript" src="ximpel/ximpel.js"></script>
+ 
+        <!-- NEW SNIPPET -->
+        <script type="text/javascript">
+            $( document ).ready(function(){
+                var myXimpelApp = new ximpel.XimpelApp(
+                    'someappid',
+                    'playlist.xml', 
+                    'config.xml'
+                );
+                myXimpelApp.load();
+            });
+        </script>
+        <!-- NEW SNIPPET -->
+    </head>
+    <body>
+ 
+    </body> 
+</html>

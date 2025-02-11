@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ximpel>
+    <playlist>
+	
+				<subject id="1">
+			<media>
+				<video>
+		<source file="finalvids/A" extensions="mp4,webm" types="video/mp4,video/webm" />
+				<overlay startTime="135" leadsTo="2" shape="rectangle" x="0px" y="900px" width="960px" height="200" text="Look at phone"/>
+				<overlay startTime="135" leadsTo="3" shape="rectangle" x="960px" y="900px" width="960px" height="200" text="Don't look at phone"/>
+		
+				</video>
+			</media>
+		</subject>
+
+		<subject id="2" leadsTo="4">
+			<media>
+				<video>
+					<source file="finalvids/B1" extensions="mp4,webm" types="video/mp4,video/webm" />
+				</video>
+			</media>
+		</subject>
+
+		<subject id="3">
+			<media>
+				<video>
+					<source file="finalvids/B2" extensions="mp4,webm" types="video/mp4,video/webm" />
+				<overlay startTime="2" leadsTo="4" shape="rectangle" x="1400px" y="900px" width="960px" height="200" text="Skip"/>
+				</video>
+			</media>
+		</subject>
+
+		<subject id="4">
+			<media>
+				<video>
+			<source file="finalvids/C" extensions="mp4,webm" types="video/mp4,video/webm" />
+				<overlay startTime="103" leadsTo="adventure" shape="rectangle" x="0px" y="900px" width="960px" height="200" text="Leave immediately"/>
+				<overlay startTime="103" leadsTo="stay" shape="rectangle" x="960px" y="900px" width="960px" height="200" text="Look further"/>
+				</video>
+			</media>
+		</subject>
+
+	
+		<subject id="stay">
+			<media>
+				<video>
+					<source file="finalvids/stay" extensions="mp4" types="video/mp4" duration="49"/>
+						<overlay startTime="42" text="Leave the money" height="200" width="960px" leadsTo="leavemoney" x="0px" y="900px" backgroundColor="#d9e8ff"/>
+						<overlay startTime="42" text="Take the money" height="200" width="960px" leadsTo="takemoney" x="960px" y="900px" backgroundColor="#d9e8ff"/>
+				</video>
+			</media>
+		</subject>	
+
+		<subject id="leavemoney" leadsTo="rollCredits">
+
+			<media>
+				<video>
+				<source file="finalvids/leavemoney" extensions="mp4" types="video/mp4"/>
+				</video>
+            </media>
+        </subject>		
+
+		<subject id="takemoney" leadsTo="rollCredits">
+
+			<media>
+				<video>
+				<source file="finalvids/takemoney" extensions="mp4" types="video/mp4"/>
+				</video>
+            </media>
+        </subject>		
+		
+
+		<subject id="adventure">
+			<media>
+				<video>
+					<source file="finalvids/vlucht" extensions="mp4" types="video/mp4"/>
+						<overlay startTime="21" text="Go Left" height="200" width="960px" leadsTo="left" x="0px" y="900px" backgroundColor="#d9e8ff"/>
+						<overlay startTime="21" text="Go Right" height="200" width="960px" leadsTo="right" x="960px" y="900px" backgroundColor="#d9e8ff"/>
+				</video>
+			</media>
+		</subject>
+		
+		<subject id="left">
+
+			<media>
+				<video>
+				<source file="finalvids/left" extensions="mp4" types="video/mp4" duration="21"/>
+					<overlay startTime="7" text="Call 112" height="200" width="960px" leadsTo="yes911" x="0px" y="900px" backgroundColor="#d9e8ff"/>
+					<overlay startTime="7" text="Don't call 112" height="200" width="960px" leadsTo="no911" x="960px" y="900px" backgroundColor="#d9e8ff"/>
+				</video>
+            </media>
+        </subject>
+		
+
+		<subject id="right">
+
+			<media>
+				<video>
+				<source file="finalvids/right" extensions="mp4" types="video/mp4" duration="37"/>
+					<overlay startTime="21" text="Call 112" height="200" width="960px" leadsTo="yes911" x="0px" y="900px" backgroundColor="#d9e8ff"/>
+					<overlay startTime="21" text="Don't call 112" height="200" width="960px" leadsTo="no911" x="960px" y="900px" backgroundColor="#d9e8ff"/>
+				</video>
+            </media>
+        </subject>
+		
+		<subject id="yes911" leadsTo="rollCredits">
+
+			<media>
+				<video>
+				<source file="finalvids/yes911" extensions="mp4" types="video/mp4"/>
+
+				</video>
+            </media>
+        </subject>		
+		
+		<subject id="no911" leadsTo="rollCredits">
+
+			<media>
+				<video>
+				<source file="finalvids/no911" extensions="mp4" types="video/mp4"/>
+
+				</video>
+            </media>
+        </subject>
+
+		<subject id="rollCredits">
+
+			<media>
+				<video>
+				<source file="finalvids/credits" extensions="mp4" types="video/mp4"/>
+
+				</video>
+            </media>
+        </subject>
+
+
+		
+    </playlist>    
+</ximpel>
